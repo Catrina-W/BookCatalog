@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+#book-catalog {
+    text-align: center;
+}
+
+#book-catalog .book-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 200px;
+}
+
+#book-catalog .book {
+    display: flex;
+    text-align: start;
+    padding: 40px 12px;
+    border: 1px solid #313131;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0;
+    transition: 0.2s ease;
+}
+
+#book-catalog .book:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+#book-catalog .description {
+    margin-left: 30px;
+    margin-right: 100px;
+}
