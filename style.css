@@ -6,20 +6,74 @@
   font-family: "Spartan", sans-serif;
 }
 
+/* GLOBAL STYLES */
+
+.section-p1 {
+    padding: 40px 100px;
+}
+
+/* NAVIGATION BAR */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #5b7297;
+    box-shadow: 0 10px 10px #cccccc;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #fff;
+}
+
+
+/* CURRENT CATALOG */
+
 #book-catalog {
     text-align: center;
+}
+
+#book-catalog h2 {
+    font-size: 50px;
+    color: #555454;
+    padding: 40px 0;
 }
 
 #book-catalog .book-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 200px;
 }
 
 #book-catalog .book {
-    display: flex;
     text-align: start;
+    display: flex;
     padding: 40px 12px;
     border: 1px solid #313131;
     border-radius: 25px;
@@ -34,7 +88,24 @@
     transition: box-shadow 0.4s ease-in-out;
 }
 
-#book-catalog .description {
-    margin-left: 30px;
-    margin-right: 100px;
+#book-catalog .book img {
+    padding-left: 10px;
 }
+
+#book-catalog .description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding-right: 90px;
+}
+
+#book-catalog .description h4 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #555454;
+}
+
+#book-catalog .description span {
+    padding-top: 10px;
+}
+
