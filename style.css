@@ -53,21 +53,56 @@
 }
 
 
-/* CURRENT CATALOG */
+/* CATALOG */
 
 #book-catalog {
     text-align: center;
 }
 
+/* CATALOG HEADING */
+
 #book-catalog h2 {
-    font-size: 50px;
+    font-size: 40px;
     color: #555454;
     padding: 40px 0;
 }
 
+/* CATALOG SEARCH BAR */
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.container form {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container form input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+    margin-right: 100px;
+}
+
+.container form i {
+    padding-left: 10px;
+}
+
+/* CATALOG BOXES */
+
 #book-catalog .book-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 

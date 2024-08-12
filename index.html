@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Book Catalog</title>
 </head>
@@ -17,13 +18,23 @@
 
     <section id="book-catalog" class="section-p1">
         <h2>Comics in Current Collection</h2>
-        <div class="book-container">
+
+        <section class="container">
+            <form>
+                <i class="fas fa-search"></i>
+                <input type="text" name="" id="search-item" placeholder="Search comics by year" onkeyup="search()">
+            </form>
+        </section>
+
+
+        <div class="book-container" id="book-container">
+
             <div class="book">
                 <img src="images/comic.jpg" alt="">
                 <div class="description">
                     <h4>Comic Book Title</h4>
                     <span>Month:</span>
-                    <span>Year:</span>
+                    <h5>Year: 1989</h5>
                     <span>Summary:</span>
                 </div>
             </div>
@@ -32,8 +43,7 @@
                 <div class="description">
                     <h4>Comic Book Title</h4>
                     <span>Month:</span>
-                    <span>Year:</span>
-                    <span>Summary:</span>
+                    <h5>Year: 1989</h5>                    <span>Summary:</span>
                 </div>
             </div>
             <div class="book">
@@ -41,8 +51,7 @@
                 <div class="description">
                     <h4>Comic Book Title</h4>
                     <span>Month:</span>
-                    <span>Year:</span>
-                    <span>Summary:</span>
+                    <h5>Year: 1989</h5>                    <span>Summary:</span>
                 </div>
             </div>
             <div class="book">
@@ -50,8 +59,7 @@
                 <div class="description">
                     <h4>Comic Book Title</h4>
                     <span>Month:</span>
-                    <span>Year:</span>
-                    <span>Summary:</span>
+                    <h5>Year: 1989</h5>                    <span>Summary:</span>
                 </div>
             </div>
             <div class="book">
@@ -59,8 +67,7 @@
                 <div class="description">
                     <h4>Comic Book Title</h4>
                     <span>Month:</span>
-                    <span>Year:</span>
-                    <span>Summary:</span>
+                    <h5>Year: 1989</h5>                    <span>Summary:</span>
                 </div>
             </div>
             <div class="book">
@@ -68,12 +75,12 @@
                 <div class="description">
                     <h4>Comic Book Title</h4>
                     <span>Month:</span>
-                    <span>Year:</span>
-                    <span>Summary:</span>
+                    <h5>Year: 1989</h5>                    <span>Summary:</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
